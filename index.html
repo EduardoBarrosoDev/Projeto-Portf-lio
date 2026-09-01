@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Controle financeiro</h1>
+        <p>Facilitando sua organização financeira</p>
+    </header>
+    <main>
+
+        <!--Sessão de movimentação-->
+        <section>
+            <h2>Movimentação</h2>
+
+            <p>
+                <strong>Saldo</strong>
+                <span id="iSaldo">R$ 0,00 </span>
+            </p>
+
+            <p>
+                <strong>Entrada</strong>
+                <span id="iEntrada">R$ 0,00 </span>
+            </p>
+
+            <p>
+                <strong>Saída</strong>
+                <span id="iSaida"> R$ 0,00 </span>
+            </p>
+        </section>
+
+        <!--Sessão de novas movimentações-->
+        <section>
+            <h2>Nova movimentação</h2>
+            <label for="iDescricao">Descrição</label>
+            <input type="text" name="descricao" id="iDescricao">
+
+            <label for="iValor">Valor</label>
+            <input type="number" name="valor" id="iValor">
+
+            <!--Opção de entrada e saída-->
+            <input type="radio" name="opcao" id="iEntrou">
+            <label for="iEntrou">Entrada</label>
+            <input type="radio" name="opcao" id="iSaiu">
+            <label for="iSaiu">Saída</label>
+
+            <button>Finalizar</button>
+        </section>
+
+        <!--Sessão para histório de movimentação-->
+        <section>
+            <h2>Histórico</h2>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
