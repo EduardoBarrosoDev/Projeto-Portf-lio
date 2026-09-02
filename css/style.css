@@ -1,8 +1,54 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
+/* Reset da página */
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
 
+/*Configuração geral da página */
+body {
+    background-color: rgba(144, 238, 144, 0.678);
+
+    font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    
+    
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto 0;
+}
+
+/*Aqui estão as movimentações automáticas */
+.movie {
+    border-radius: 10px;
+    border: 5px solid black;
+    margin-bottom: 7px;
+}
+.movie > h2 {
+    text-align: center;
+}
+.movie > p {
+    padding: 5px;
+}
+
+.campo {
+    margin-bottom: 7px;
+}
+
+#historico {
+    text-align: center;
 }
